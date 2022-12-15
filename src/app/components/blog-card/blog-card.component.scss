@@ -1,0 +1,19 @@
+.blog-card {
+    margin-bottom: 15px;
+}
+
+.blog-title {
+    text-decoration: none;
+    //color: #f4ce36;
+}
+
+a:hover {
+    color: indianred;
+}
+
+.spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
