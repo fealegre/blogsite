@@ -4,7 +4,7 @@
     </div>
     <div>
         <mat-form-field>
-            <mat-label>Items per page: </mat-label>
+            <mat-label>Items por página: </mat-label>
             <mat-select [(ngModel)]="config.itemsPerPage" (selectionChange)="changePageItemCount($event)">
                 <mat-option *ngFor="let page of pageSizeOptions" [value]="page">
                     {{ page }}

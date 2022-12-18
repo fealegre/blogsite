@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/purple-green.css";
-@import "~bootstrap/dist/css/bootstrap.css";
+// @import "@angular/material/prebuilt-themes/purple-green.css";
+// @import "bootstrap/dist/css/bootstrap.css";
+
+
 
 html,
 body {
@@ -8,7 +10,7 @@ body {
 }
 
 body {
-    background-color: #616161;
+    background-color: #6e6e6e;
 }
 
 body {
@@ -17,7 +19,7 @@ body {
 }
 
 .container {
-    padding: top 60px;
+    padding-top: 60px;
 }
 
 .ck-editor__editable {

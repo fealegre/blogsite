@@ -1,6 +1,3 @@
-<hr />
-<hr />
-<hr />
 <ng-container *ngIf="blogPost && blogPost.length>0; else emptyblog">
     <div *ngFor="let post of blogPost | paginate: config">
         <mat-card class="blog-card mat-elevation-z2">
@@ -16,11 +13,10 @@
             <mat-card-actions align="end">
                 <ng-container *ngIf="appUser?.isAdmin">
                     <button mat-raised-button color="accent" [routerLink]="['/editpost',post.postId]">Edit</button>
-                    <button mat-raised-button color="warn" (click)="delete(post.postId)">Delete</button>
+                    <button mat-raised-button color="warn" (click)="delete(post.postId)">Borrar</button>
                 </ng-container>
                 <span class="spacer"></span>
-                <button mat-raised-button color="primary" [routerLink]="['/blog/', post.postId, post.title | slug]">Read
-                    More</button>
+                <button mat-raised-button color="primary" [routerLink]="['/blog/', post.postId, post.title | slug]">Leer mas</button>
             </mat-card-actions>
         </mat-card>
     </div>

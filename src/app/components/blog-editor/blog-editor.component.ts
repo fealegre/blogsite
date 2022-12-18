@@ -19,7 +19,7 @@ export class BlogEditorComponent implements OnInit, OnDestroy {
   public Editor: any = ClassicEditor;
   ckeConfig: any;
   postData = new Post();
-  formTitle = 'Add';
+  formTitle = 'Agregar';
   postId = '';
   private unsubscribe$ = new Subject<void>();
   appUser: AppUser;

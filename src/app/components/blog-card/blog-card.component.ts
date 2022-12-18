@@ -46,10 +46,10 @@ export class BlogCardComponent implements OnInit, OnDestroy {
   }
 
   delete(postId: string) {
-    if (confirm('Are you sure')) {
+    if (confirm('Confirma borrar publicación?')) {
       this.blogService.deletePost(postId).then(() => {
         this.commentService.deleteAllCommentForBlog(postId);
-        this.snackBarService.showSnackBar('Blog post deleted successfully');
+        this.snackBarService.showSnackBar('Se borró la publicación');
       });
     }
   }
